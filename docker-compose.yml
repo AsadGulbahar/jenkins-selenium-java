@@ -1,0 +1,9 @@
+services:
+  selenium-chrome:
+    image: selenium/standalone-chrome:4.44.0-20260505
+    shm_size: 2gb
+    ports:
+      - "4444:4444"
+      - "7900:7900"
+    environment:
+      SE_VNC_NO_PASSWORD: "1"
